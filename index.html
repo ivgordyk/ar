@@ -13,18 +13,10 @@
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     </head>
     <body>
-        <div class="fixed pt-4 px-4 text-gray-700 w-full">
-            <div x-data="{ open: false }" class="bg-white border flex flex-col max-w-screen-xl mx-auto px-4 rounded-xl shadow-lg lg:flex-row lg:items-center lg:justify-between lg:px-8">
-                <div class="flex flex-row items-center justify-between p-4">
+        <div class="fixed flow-root text-gray-700 w-full sm:pt-4 sm:px-4">
+            <div x-data="{ open: false }" class="bg-white border flex flex-col max-w-screen-xl shadow-lg sm:h-auto sm:rounded-xl lg:flex-row lg:items-center lg:justify-between lg:px-8">
+                <div class="flex flex-row items-center justify-between px-4 py-2 sm:p-4">
                     <a href="index.html" class="font-semibold text-gray-900 tracking-widest" title="Головна сторінка кафедри архітектури"><img src="logo/logo-ar-b2.svg" width="36" class="hover:opacity-95 opacity-75"></a>
-                    <div class="flex flex-row items-center mx-auto space-x-2 lg:hidden lg:order-2">
-                        <a href="https://www.facebook.com/groups/537180406945397" class="border border-gray-700 hover:bg-yellow-600 rounded-full hover:text-white hover:border-yellow-600 hover:shadow-md w-10 h-10 p-2" data-pg-class-style="btn_social" target="_blank" title="Ми у Facebook"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-                            </svg></a>
-                        <a href="https://www.youtube.com/channel/UC0iTpn9EV57iRqd8m4mCcIQ" class="border border-gray-700 hover:bg-yellow-600 rounded-full hover:text-white hover:border-yellow-600 hover:shadow-md w-10 h-10 p-2" data-pg-class-style="btn_social" target="_blank" title="Ми у YouTube"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"></path>
-                            </svg></a>
-                    </div>
                     <button class="focus:outline-none focus:shadow-outline hover:text-yellow-600 rounded-lg lg:hidden" @click="open = !open">
                         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
                             <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
@@ -32,16 +24,16 @@
                         </svg>
                     </button>
                 </div>
-                <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 text-center lg:flex lg:flex-row lg:justify-start lg:pb-0 lg:text-left">
-                    <a href="npp.html" data-pg-class-style="btn_activ" class="focus:bg-gray-200 focus:outline-none focus:shadow-outline focus:text-gray-900 font-semibold hover:bg-gray-200 hover:text-gray-900 rounded-lg active:bg-yellow-600 active:text-white mb-2 py-2 px-3 lg:mb-0 lg:mr-2">Колектив</a>
-                    <div @click.away="open = false" class="relative lg:mr-2" x-data="{ open: false }">
+                <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow h-screen hidden overflow-auto pb-16 pt-3 text-center sm:h-auto sm:pt-0 lg:flex lg:flex-row lg:h-auto lg:justify-start lg:overflow-visible lg:pb-0 lg:text-left">
+                    <a href="npp.html" data-pg-class-style="btn_activ" class="focus:bg-gray-200 focus:outline-none focus:shadow-outline focus:text-gray-900 font-semibold hover:bg-gray-200 hover:text-gray-900 rounded-lg active:bg-yellow-600 active:text-white py-2 px-3 lg:mb-0 lg:mr-2 sm:mx-0 mb-2 mx-2">Колектив</a>
+                    <div @click.away="open = false" class="mx-2 relative sm:mx-4 lg:ml-0 lg:mr-2" x-data="{ open: false }">
                         <button @click="open = !open" data-pg-class-style="btn_drop" class="focus:bg-gray-200 focus:outline-none focus:shadow-outline focus:text-gray-900 font-semibold hover:bg-gray-200 hover:text-gray-900 rounded-lg active:bg-yellow-600 active:text-white mb-2 py-2 px-3 lg:mb-0 w-full">
                             <span>Студентам</span>
                             <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                             </svg>
                         </button>
-                        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="mt-2 rounded-md shadow-lg transform transition duration-200 ease-in-out w-full origin-top relative lg:absolute lg:truncate lg:w-auto" data-pg-class-style="menu_box">
+                        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="rounded-md shadow-lg transform transition duration-200 ease-in-out w-full relative lg:absolute lg:truncate lg:w-auto -mt-1 lg:mt-2 origin-top" data-pg-class-style="menu_box">
                             <div class="bg-white border p-1 rounded-xl shadow">
                                 <p class="pt-2 px-4 text-center text-gray-500 uppercase lg:text-left">Освітній процес</p>
                                 <a class="block font-semibold bg-transparent rounded-lg focus:text-gray-900 focus:outline-none py-1.5 px-4 hover:bg-yellow-600 hover:text-white focus:bg-gray-200 focus:shadow-outline" href="dystantsiyne-navchannya.html" data-pg-class-style="menu_link">Дистанційне навчання</a>
@@ -63,14 +55,14 @@
                             </div>
                         </div>
                     </div>
-                    <div @click.away="open = false" class="relative lg:mr-2" x-data="{ open: false }">
+                    <div @click.away="open = false" class="mx-2 relative sm:mx-4 lg:ml-0 lg:mr-2" x-data="{ open: false }">
                         <button @click="open = !open" data-pg-class-style="btn_drop" class="focus:bg-gray-200 focus:outline-none focus:shadow-outline focus:text-gray-900 font-semibold hover:bg-gray-200 hover:text-gray-900 rounded-lg active:bg-yellow-600 active:text-white mb-2 py-2 px-3 lg:mb-0 w-full">
                             <span>Наука</span>
                             <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                             </svg>
                         </button>
-                        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="mt-2 rounded-md shadow-lg transform transition duration-200 ease-in-out w-full origin-top relative lg:absolute lg:truncate lg:w-auto" data-pg-class-style="menu_box">
+                        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="rounded-md shadow-lg transform transition duration-200 ease-in-out w-full relative lg:absolute lg:truncate lg:w-auto -mt-1 lg:mt-2 origin-top" data-pg-class-style="menu_box">
                             <div class="bg-white border p-1 rounded-xl shadow">
                                 <a class="block font-semibold bg-transparent rounded-lg focus:text-gray-900 focus:outline-none py-1.5 px-4 hover:bg-yellow-600 hover:text-white focus:bg-gray-200 focus:shadow-outline" href="konferentsiyi.html" data-pg-class-style="menu_link">Конференції</a>
                                 <p class="border-dotted border-t-4 pt-2 px-4 text-center text-gray-500 uppercase lg:text-left">Студентська наука</p>
@@ -85,14 +77,14 @@
                             </div>
                         </div>
                     </div>
-                    <div @click.away="open = false" class="relative lg:mr-2" x-data="{ open: false }">
+                    <div @click.away="open = false" class="mx-2 relative sm:mx-4 lg:ml-0 lg:mr-2" x-data="{ open: false }">
                         <button @click="open = !open" data-pg-class-style="btn_drop" class="focus:bg-gray-200 focus:outline-none focus:shadow-outline focus:text-gray-900 font-semibold hover:bg-gray-200 hover:text-gray-900 rounded-lg active:bg-yellow-600 active:text-white mb-2 py-2 px-3 lg:mb-0 w-full">
                             <span>Абітурієнтам</span>
                             <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                             </svg>
                         </button>
-                        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="mt-2 rounded-md shadow-lg transform transition duration-200 ease-in-out w-full origin-top relative lg:absolute lg:truncate lg:w-auto" data-pg-class-style="menu_box">
+                        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="rounded-md shadow-lg transform transition duration-200 ease-in-out w-full relative lg:absolute lg:truncate lg:w-auto -mt-1 lg:mt-2 origin-top" data-pg-class-style="menu_box">
                             <div class="bg-white border p-1 rounded-xl shadow">
                                 <a class="block font-semibold bg-transparent rounded-lg focus:text-gray-900 focus:outline-none py-1.5 px-4 hover:bg-yellow-600 hover:text-white focus:bg-gray-200 focus:shadow-outline" href="umovy-vstupu.html" data-pg-class-style="menu_link">Умови вступу</a>
                                 <a class="block font-semibold bg-transparent rounded-lg focus:text-gray-900 focus:outline-none py-1.5 px-4 hover:bg-yellow-600 hover:text-white focus:bg-gray-200 focus:shadow-outline" href="https://pk.nau.edu.ua" data-pg-class-style="menu_link" target="_blank">Приймальна комісія</a>
@@ -100,7 +92,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="media.html" data-pg-class-style="btn_activ" class="focus:bg-gray-200 focus:outline-none focus:shadow-outline focus:text-gray-900 font-semibold hover:bg-gray-200 hover:text-gray-900 rounded-lg active:bg-yellow-600 active:text-white mb-2 py-2 px-3 lg:mb-0 lg:mr-2">Медіатека</a>
+                    <a href="media.html" data-pg-class-style="btn_activ" class="focus:bg-gray-200 focus:outline-none focus:shadow-outline focus:text-gray-900 font-semibold hover:bg-gray-200 hover:text-gray-900 rounded-lg active:bg-yellow-600 active:text-white py-2 px-3 lg:mb-0 lg:mr-2 sm:mx-0 mb-2 mx-2">Медіатека</a>
                     <div class="flex-row hidden items-center ml-auto space-x-2 lg:flex lg:order-2">
                         <a href="https://www.facebook.com/groups/537180406945397" class="border border-gray-700 hover:bg-yellow-600 rounded-full hover:text-white hover:border-yellow-600 hover:shadow-md w-10 h-10 p-2" data-pg-class-style="btn_social" target="_blank" title="Ми у Facebook"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
@@ -114,11 +106,16 @@
         </div>
         <section class="bg-gray-800 text-white" style="background-image: url('background/background.svg'); background-size: cover; background-position: center center;"> 
             <div class="flex h-screen items-center justify-center max-w-screen-xl mx-auto px-4" style="background-size: cover;"> 
-                <div class="-mx-4 flex flex-wrap justify-center w-8/12 lg:justify-start"> 
-                    <img src="logo/logo-ar-w2.svg" width="180" height="180" class="shadow-xl"/>
-                    <div class="px-4 text-center w-auto lg:text-left"> 
-                        <h1 class="font-extralight leading-tight text-7xl">кафедра</h1>
-                        <h1 class="font-bold leading-tight text-7xl">архітектури</h1> 
+                <div class="flex flex-wrap justify-center w-full sm:-mx-4 lg:justify-start lg:w-8/12"> 
+                    <img src="logo/logo-ar-w2.svg" width="120" height="120" class="flex sm:hidden" data-pg-class-style="mob_view"/>
+                    <img src="logo/logo-ar-w2.svg" width="180" height="180" class="hidden sm:flex" data-pg-class-style="pc_view"/>
+                    <div class="hidden px-4 text-7xl text-center truncate w-auto sm:block md:text-left"> 
+                        <h1 class="font-extralight leading-tight">кафедра</h1>
+                        <h1 class="font-bold leading-tight">архітектури</h1> 
+                    </div>
+                    <div class="pt-8 px-4 text-4xl text-center truncate w-auto sm:hidden md:text-left"> 
+                        <h1 class="font-extralight leading-tight">кафедра</h1>
+                        <h1 class="font-bold leading-tight">архітектури</h1> 
                     </div>                     
                 </div>                 
             </div>             
@@ -126,40 +123,49 @@
         <section class="py-4 text-center" style="background-color: #655656;"> 
             <div class="max-w-screen-xl mx-auto px-4"> 
                 <div class="flex flex-wrap justify-center"> 
-                    <div class="flex px-4 w-40">
-                        <a href="https://nau.edu.ua/" class="hover:bg-gray-50 hover:bg-opacity-5 hover:duration-200 hover:shadow-2xl hover:transition hover:underline p-5 rounded-xl text-white w-full" title="Національний авіаційний університет" target="_blank"><img src="logo/nau-w.svg" width="90" class="mx-auto"/></a> 
+                    <div class="flex mx-2 w-32">
+                        <a href="https://nau.edu.ua/" class="hover:bg-gray-50 hover:bg-opacity-5 hover:duration-200 hover:shadow-lg hover:transition hover:underline p-5 rounded-xl text-white w-full h-full items-center justify-items-center flex" title="Національний авіаційний університет" target="_blank" data-pg-class-style="logo_btn"><img src="logo/nau-w.svg" width="90" class="mx-auto"/></a> 
                     </div>
-                    <div class="flex px-4 w-40">
-                        <a href="http://iap.nau.edu.ua/index.php/kafedry/arhitectura" class="hover:bg-gray-50 hover:bg-opacity-5 hover:shadow-2xl hover:underline p-5 rounded-xl text-white w-full" title="Факультет архітектури, будівництва та дизайну" target="_blank"><img src="logo/fabd 2.svg" width="73" class="mx-auto"/></a> 
+                    <div class="flex mx-2 w-32">
+                        <a href="http://iap.nau.edu.ua/index.php/kafedry/arhitectura" class="hover:bg-gray-50 hover:bg-opacity-5 hover:duration-200 hover:shadow-lg hover:transition hover:underline p-5 rounded-xl text-white w-full h-full items-center justify-items-center flex" title="Факультет архітектури, будівництва та дизайну" target="_blank" data-pg-class-style="logo_btn"><img src="logo/fabd 2.svg" width="73" class="mx-auto"/></a> 
                     </div>                     
                 </div>                 
             </div>             
         </section>
-        <section class="py-12 text-center" style="background-color: #b3d1c1;"> 
+        <section class="py-12 text-center sm:px-2" style="background-color: #b3d1c1;"> 
             <div class="max-w-screen-xl mx-auto px-4"> 
                 <div class="-mx-4 flex flex-wrap justify-center"> 
                     <div class="p-4 w-full sm:w-full md:w-6/12 xl:w-4/12">
-                        <div class="px-2 py-12">
+                        <div class="p-2 md:py-4 xl:py-10">
                             <p class="text-gray-700 text-left">галузь знань</p>
-                            <div class="flex">
+                            <div class="flex sm:hidden" data-pg-class-style="mob_view">
+                                <h1 class="-mt-1 font-semibold pr-2 text-5xl text-gray-800 text-right w-4/12">19</h1>
+                                <h2 class="font-medium pl-2 text-2xl text-gray-800 text-left w-auto">архітектура та будівництво</h2>
+                            </div>
+                            <div class="hidden sm:flex" data-pg-class-style="pc_view">
                                 <h1 class="-mt-1 font-semibold pr-2 text-7xl text-gray-800 text-right w-4/12">19</h1>
-                                <h2 class="font-medium pl-2 text-3xl text-gray-800 text-left w-auto">архітектура та будівництво</h2>
+                                <h2 class="font-medium pl-2 text-3xl text-gray-800 text-left w-8/12">архітектура та будівництво</h2>
                             </div>
                         </div>                         
                     </div>                     
                     <div class="p-4 w-full sm:w-full md:w-6/12 xl:w-4/12">
-                        <div class="px-2 py-12">
+                        <div class="p-2 md:py-4 xl:py-10">
                             <p class="text-gray-700 text-left">спеціальність</p>
-                            <div class="flex">
+                            <div class="flex sm:hidden" data-pg-class-style="mob_view">
+                                <h1 class="-mt-1 font-semibold pr-2 text-5xl text-gray-800 text-right w-4/12">191</h1>
+                                <h2 class="font-medium pl-2 text-2xl text-gray-800 text-left w-auto">архітектура та містобудування</h2>
+                            </div>
+                            <div class="hidden sm:flex" data-pg-class-style="pc_view">
                                 <h1 class="-mt-1 font-semibold pr-2 text-7xl text-gray-800 text-right w-4/12">191</h1>
-                                <h2 class="font-medium pl-2 text-3xl text-gray-800 text-left w-auto">архітектура та містобудування</h2>
+                                <h2 class="font-medium pl-2 text-3xl text-gray-800 text-left w-8/12">архітектура та містобудування</h2>
                             </div>
                         </div>                         
                     </div>                     
                     <div class="p-4 w-full sm:w-full md:w-6/12 xl:w-4/12">
-                        <div class="px-2 py-12">
+                        <div class="p-2 md:py-4 xl:py-10">
                             <p class="text-gray-700 text-left">освітньо-професійна программа</p>
-                            <h2 class="font-medium text-3xl text-gray-800 text-left w-auto">дизайн архітектурного середовища</h2>
+                            <h2 class="font-medium hidden text-3xl text-gray-800 text-left w-auto sm:flex">дизайн архітектурного середовища</h2>
+                            <h2 class="font-medium text-2xl text-gray-800 text-left w-auto sm:hidden">дизайн архітектурного середовища</h2>
                         </div>                         
                     </div>                     
                 </div>                 
@@ -180,7 +186,8 @@
             <div class="max-w-screen-xl mx-auto px-4"> 
                 <div class="mb-6 px-4 text-left">
                     <p class="text-gray-500">наука кафедри архітектури</p>
-                    <h2 class="font-bold mb-2 text-4xl text-gray-700">Дипломні проекти</h2>
+                    <h2 class="font-bold mb-2 text-3xl text-gray-700 sm:hidden">Дипломні проекти</h2>
+                    <h2 class="font-bold hidden mb-2 text-4xl text-gray-700 sm:flex">Дипломні проекти</h2>
                 </div>
                 <div class="mx-auto px-4"> 
                     <div class="-mx-4 flex flex-wrap justify-center lg:justify-start"> 
@@ -290,42 +297,43 @@
             <div class="max-w-screen-xl mx-auto px-4"> 
                 <div class="px-4 text-left">
                     <p class="text-gray-400">наука кафедри архітектури</p>
-                    <h2 class="font-bold mb-2 text-4xl text-white">Співробітництво</h2>
+                    <h2 class="font-bold mb-2 text-3xl text-white sm:hidden">Співробітництво</h2>
+                    <h2 class="font-bold hidden mb-2 text-4xl text-white sm:flex">Співробітництво</h2>
                 </div>                 
             </div>
             <div class="max-w-screen-xl mx-auto px-4"> 
                 <div class="flex flex-wrap justify-center"> 
-                    <div class="flex h-40 p-4 w-40">
-                        <a href="http://www.knuba.edu.ua/" class="flex hover:bg-gray-50 hover:bg-opacity-5 hover:shadow-2xl hover:underline p-5 rounded-xl text-white w-full" data-tooltip-position="auto" target="_blank" title="Київський національний університет будівництва i архітектури"><img src="logo/knuba-w.svg" width="73" class="mx-auto"/></a> 
+                    <div class="flex h-32 m-2 w-32">
+                        <a href="http://www.knuba.edu.ua/" class="hover:bg-gray-50 hover:bg-opacity-5 hover:duration-200 hover:shadow-lg hover:transition hover:underline p-5 rounded-xl text-white w-full h-full items-center justify-items-center flex" data-tooltip-position="auto" target="_blank" title="Київський національний університет будівництва i архітектури" data-pg-class-style="logo_btn"><img src="logo/knuba-w.svg" width="73" class="mx-auto"/></a> 
                     </div>
-                    <div class="flex h-40 p-4 w-40">
+                    <div class="flex h-32 m-2 w-32">
                         <a href="https://naoma.edu.ua/" class="flex hover:bg-gray-50 hover:bg-opacity-5 hover:shadow-2xl hover:underline items-center justify-center p-5 rounded-xl text-white w-full" title="Національна академія образотворчого мистецтва і архітектури" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="73" height="73" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
                                 <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
                                 <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
                             </svg></a> 
                     </div>
-                    <div class="flex h-40 p-4 w-40">
+                    <div class="flex h-32 m-2 w-32">
                         <a href="https://donnaba.edu.ua/" class="flex hover:bg-gray-50 hover:bg-opacity-5 hover:shadow-2xl hover:underline items-center justify-center p-5 rounded-xl text-white w-full" title="Донбаська національна академія будівництва і архітектури" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="73" height="73" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
                                 <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
                                 <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
                             </svg></a> 
                     </div>
-                    <div class="flex h-40 p-4 w-40">
+                    <div class="flex h-32 m-2 w-32">
                         <a href="https://zniiep.com.ua/" class="flex hover:bg-gray-50 hover:bg-opacity-5 hover:shadow-2xl hover:underline p-5 rounded-xl text-white w-full" title="Український зональний науково-дослідний і проектний інститут по цивільному будівництву" target="_blank"><img src="logo/zndiep-w.svg" width="73" class="mx-auto"/></a> 
                     </div>
-                    <div class="flex h-40 p-4 w-40">
+                    <div class="flex h-32 m-2 w-32">
                         <a href="http://www.ndi-design.nau.edu.ua" class="flex hover:bg-gray-50 hover:bg-opacity-5 hover:shadow-2xl hover:underline items-center justify-center p-5 rounded-xl text-white w-full" target="_blank" title="Український науково-дослідний інститут дизайну та ергономіки НАУ"><svg xmlns="http://www.w3.org/2000/svg" width="73" height="73" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
                                 <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
                                 <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
                             </svg></a> 
                     </div>
-                    <div class="flex h-40 p-4 w-40">
+                    <div class="flex h-32 m-2 w-32">
                         <a href="" class="flex hover:bg-gray-50 hover:bg-opacity-5 hover:shadow-2xl hover:underline items-center justify-center p-5 rounded-xl text-white w-full" target="_blank" title="УкрПроектРеставрація"><svg xmlns="http://www.w3.org/2000/svg" width="73" height="73" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
                                 <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
                                 <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
                             </svg></a> 
                     </div>
-                    <div class="flex h-40 p-4 w-40">
+                    <div class="flex h-32 m-2 w-32">
                         <a href="https://civilbud.com.ua" class="flex hover:bg-gray-50 hover:bg-opacity-5 hover:shadow-2xl hover:underline items-center justify-center p-5 rounded-xl text-white w-full" target="_blank" title="УкрНДІПцивільсільбуд"><svg xmlns="http://www.w3.org/2000/svg" width="73" height="73" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
                                 <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
                                 <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
