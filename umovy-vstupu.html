@@ -113,15 +113,194 @@
             </div>             
         </section>
         <section class="h-4" style="background-color: #b3d1c1;"></section>
+        <section>
+            <div class="lining-nums max-w-screen-xl mx-auto px-4 py-8">
+                <h1 class="mb-2 text-gray-700 lg:text-4xl text-2xl lg:font-normal font-medium" data-pg-class-style="text_2xl_dark">Алгоритм вступу до НАУ 2021</h1>
+                <div x-data="{ tab: '1' }" class="mt-4 rounded-2xl shadow-xl sm:mx-4">
+                    <div class="border-gray-500 border-l border-r border-t flex pt-1 px-0.5 rounded-t-2xl w-full">
+                        <button :class="{ 'active font-bold bg-gray-600 text-white': tab === '1' }" class="lining-nums mx-0.5 py-2 rounded-xl w-full" @click="tab = '1'">1</button>
+                        <button :class="{ 'active font-bold bg-gray-600 text-white': tab === '2' }" class="lining-nums mx-0.5 py-2 rounded-xl w-full" @click="tab = '2'">2</button>
+                        <button :class="{ 'active font-bold bg-gray-600 text-white': tab === '3' }" class="lining-nums mx-0.5 py-2 rounded-xl w-full" @click="tab = '3'">3</button>
+                        <button :class="{ 'active font-bold bg-gray-600 text-white': tab === '4' }" class="lining-nums mx-0.5 py-2 rounded-xl w-full" @click="tab = '4'">4</button>
+                        <button :class="{ 'active font-bold bg-gray-600 text-white': tab === '5' }" class="lining-nums mx-0.5 py-2 rounded-xl w-full" @click="tab = '5'">5</button>
+                        <button :class="{ 'active font-bold bg-gray-600 text-white': tab === '6' }" class="lining-nums mx-0.5 py-2 rounded-xl w-full" @click="tab = '6'">6</button>
+                        <button :class="{ 'active font-bold bg-gray-600 text-white': tab === '7' }" class="lining-nums mx-0.5 py-2 rounded-xl w-full" @click="tab = '7'">7</button>
+                        <button :class="{ 'active font-bold bg-gray-600 text-white': tab === '8' }" class="lining-nums mx-0.5 py-2 rounded-xl w-full" @click="tab = '8'">8</button>
+                        <button :class="{ 'active font-bold bg-gray-600 text-white': tab === '9' }" class="lining-nums mx-0.5 py-2 rounded-xl w-full" @click="tab = '9'">9</button>
+                        <button :class="{ 'active font-bold bg-gray-600 text-white': tab === '10' }" class="lining-nums mx-0.5 py-2 rounded-xl w-full" @click="tab = '10'">10</button>
+                    </div>
+                    <div class="border-b border-gray-500 border-l border-r px-3 py-6 rounded-b-2xl sm:px-6">
+                        <div x-show="tab === '1'">
+                            <h3 class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl" data-pg-class-style="team_name">// крок 1</h3>
+                            <p class="mt-3">Визначитися з спеціальністю (конкурсною пропозицією) куди плануєте вступати. <a href="https://pk.nau.edu.ua/spetsialnosti/" target="_blank" class="text-yellow-700">Перелік спеціальностей НАУ</a>. У разі виникнення труднощів з визначенням спеціальності яка підходить саме Вам, пропонуємо пройти <a href="https://pk.nau.edu.ua/Proforiyentatsiynyy-test/" target="_blank" class="text-yellow-700">профорієнтаційний тест</a>.</p>
+                        </div>
+                        <div x-show="tab === '2'">
+                            <h3 class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl" data-pg-class-style="team_name">// крок 2</h3>
+                            <p class="mt-3">Наступним кроком є визначення <a href="https://pk.nau.edu.ua/wp-content/uploads/2021/03/Dodatok_1_v8.pdf" target="_blank" class="text-yellow-700">конкурсних предметів</a> для обраної Вами спеціальності, з яких вступники мають подавати сертифікат зовнішнього незалежного оцінювання.</p>
+                        </div>
+                        <div x-show="tab === '3'">
+                            <h3 class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl" data-pg-class-style="team_name">// крок 3</h3>
+                            <p class="mt-3">Далі Вам необхідно вдало скласти ЗНО з обраних предметів. Якщо є сумніви щодо готовності до складання ЗНО, Ви можете підготуватися на <a href="http://iiot.nau.edu.ua/index.php/nauka/pidhotovka-do-zno/pravyla-pryiomu" target="_blank" class="text-yellow-700">курсах підготовки до ЗНО та вступу до НАУ</a>.</p>
+                        </div>
+                        <div x-show="tab === '4'">
+                            <h3 class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl" data-pg-class-style="team_name">// крок 4</h3>
+                            <p class="mt-3">Серед спеціальностей НАУ є такі, де потрібно пройти медичні огляди та інші доконкурсні процедури (спеціальності: 262, 272.02). У разі обрання Вами такої спеціальності для вступу це потрібно зробити до 09 липня 2021 р.<br>Детальніше дізнатися щодо строків прийому заяв та документів, конкурсного відбору та зарахування на навчання у 2021 році для вступників на базі повної загальної середньої освіти <a href="https://pk.nau.edu.ua/wp-content/uploads/2020/12/Stroky-pryiomu-zaiav-ta-dokumentiv-PZSO-2021.pdf" target="_blank" class="text-yellow-700">тут</a>.</p>
+                        </div>
+                        <div x-show="tab === '5'">
+                            <h3 class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl" data-pg-class-style="team_name">// крок 5</h3>
+                            <p class="mt-3">Ознайомитися з <a href="https://pk.nau.edu.ua/wp-content/uploads/2020/08/PERELIK-NEOBKhIDNYKh-DOKUMENTIV-DLIa-VSTUPU-1-PZSO-1.pdf" target="_blank" class="text-yellow-700">переліком необхідних документів</a> для вступу на 1 курс для вступників на базі повної загальної середньої освіти.</p>
+                        </div>
+                        <div x-show="tab === '6'">
+                            <h3 class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl" data-pg-class-style="team_name">// крок 6</h3>
+                            <p class="mt-3">Реєстрація <a href="https://ez.osvitavsim.org.ua/" target="_blank" class="text-yellow-700">електронних кабінетів вступників</a> та завантаження необхідних документів розпочинається 01 липня (Реєстрація буде доступна напередодні початку вступної кампанії 2021)</p>
+                        </div>
+                        <div x-show="tab === '7'">
+                            <h3 class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl" data-pg-class-style="team_name">// крок 7</h3>
+                            <p class="mt-3">Прийом заяв та документів у електронній формі через <a href="https://ez.osvitavsim.org.ua/" target="_blank" class="text-yellow-700">кабінет вступника</a> з 14 по 23 липня. Не забуваємо поставити 1 або 2 пріоритет для обраної конкурсної пропозиції в НАУ!</p>
+                        </div>
+                        <div x-show="tab === '8'">
+                            <h3 class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl" data-pg-class-style="team_name">// крок 8</h3>
+                            <p class="mt-3">Формування рейтингових списків вступників, надання рекомендацій до зарахування та оприлюднення списку рекомендованих (бюджет) 28 липня. Надання рекомендацій до зарахування та оприлюднення списку рекомендованих для вступників (контракт) 10 серпня (повідомлення буде розміщено в <a href="https://ez.osvitavsim.org.ua/" target="_blank" class="text-yellow-700">електронному кабінеті вступника</a> та на <a href="https://pk.nau.edu.ua/" target="_blank" class="text-yellow-700">офіційному сайті Приймальної комісії НАУ</a>)</p>
+                        </div>
+                        <div x-show="tab === '9'">
+                            <h3 class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl" data-pg-class-style="team_name">// крок 9</h3>
+                            <p class="mt-3">Вступники, які отримали рекомендації, мають виконати вимоги до зарахування (подати оригінали документів до НАУ)<br>&ndash; до 18:00 02 серпня &ndash; на місця державного або регіонального замовлення<br>&ndash; до 31 серпня &ndash; за рахунок цільових пільгових державних кредитів, за кошти фізичних та/або юридичних осіб<br>(Подання оригіналів необхідних документів для зарахування може здійснюватися крім особистого подання, шляхом: надсилання їх засобами поштового зв&rsquo;язку з обов&rsquo;язковим описом вкладень на адресу Приймальної комісії НАУ; надсилання їх сканованих копій, з накладанням на відповідні файли кваліфікованого електронного підпису вступника, через <a href="https://ez.osvitavsim.org.ua/" target="_blank" class="text-yellow-700">електронний кабінет вступника</a>)</p>
+                        </div>
+                        <div x-show="tab === '10'">
+                            <h3 class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl" data-pg-class-style="team_name">// крок 10</h3>
+                            <p class="mt-3">Після успішного подання оригіналів документів до НАУ, Ви &ndash; студент НАУ. Вітаємо!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="py-8"> 
             <div class="max-w-screen-xl mx-auto px-4"> 
-                <div class="text-center">
-                    <p class="text-gray-600" data-pg-class-style="text_sm_dark">інформація</p>
-                    <h2 class="mb-2 text-gray-700 lg:text-4xl text-2xl lg:font-normal font-medium" data-pg-class-style="text_2xl_dark">Нажаль сторінка ще на стадії розробки</h2>
+                <div class="mx-auto px-4"> 
+                    <div class="-mx-4 flex flex-wrap justify-center lg:justify-start"> 
+                        <div class="py-2 w-full sm:p-4 lg:w-6/12">
+                            <div class="border flex flex-col-reverse group h-full hover:border-gray-500 hover:shadow-2xl items-center lining-nums p-3 rounded-2xl w-full sm:flex-row">
+                                <div class="pt-3 w-full sm:pr-6 sm:pt-0">
+                                    <h2 data-pg-class-style="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl">Вступ на 1-й курс</h2>
+                                    <a href="abityrient-ar/Stroky-pryiomu-zaiav-ta-dokumentiv-PZSO-2021.pdf" class="border hover:bg-yellow-600 hover:border-yellow-600 hover:text-white inline-flex items-center mt-2 px-3 py-1 rounded-lg text-gray-600 w-full" target="_blank">Строки прийому заяв та документів</a>
+                                    <a href="abityrient-ar/Perelik-dokumentiv-Byudzhet.pdf" class="border hover:bg-yellow-600 hover:border-yellow-600 hover:text-white inline-flex items-center mt-2 px-3 py-1 rounded-lg text-gray-600 w-full" target="_blank">Перелік необхідних документів (бюджет)</a>
+                                    <a href="abityrient-ar/Perelik-dokumentiv-Kontrakt.pdf" class="border hover:bg-yellow-600 hover:border-yellow-600 hover:text-white inline-flex items-center mt-2 px-3 py-1 rounded-lg text-gray-600 w-full" target="_blank">Перелік необхідних документів (контракт)</a>
+                                    <a href="abityrient-ar/Prohrama-tvorchoho-konkursu-191-Arkhitektura-ta-mistobuduvannia.pdf" class="border hover:bg-yellow-600 hover:border-yellow-600 hover:text-white inline-flex items-center mt-2 px-3 py-1 rounded-lg text-gray-600 w-full" target="_blank">Програма творчого конкурсу</a>
+                                    <a href="abityrient-ar/Dodatok_1_v10.pdf" class="border hover:bg-yellow-600 hover:border-yellow-600 hover:text-white inline-flex items-center mt-2 px-3 py-1 rounded-lg text-gray-600 w-full" target="_blank">Перелік спеціальностей та конкурсних предметів ЗНО у 2021 році</a>
+                                </div>
+                                <div class="bg-gray-200 group-hover:bg-gray-300 group-hover:text-gray-700 p-4 rounded-lg text-gray-600 flex items-center sm:w-auto justify-center w-full sm:h-full h-full" data-pg-class-style="pic_sm_card">
+                                    <i class="fa-3x fa-fw fa-exclamation-circle fas py-1.5"></i>
+                                </div>
+                            </div>                             
+                        </div>
+                        <div class="py-2 w-full sm:p-4 lg:w-6/12">
+                            <div class="border flex flex-col-reverse group h-full hover:border-gray-500 hover:shadow-2xl items-center lining-nums p-3 rounded-2xl w-full sm:flex-row">
+                                <div class="pt-3 w-full sm:pr-6 sm:pt-0">
+                                    <h2 data-pg-class-style="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl">Вступ на 1-й скорочений, 2, 3 курс</h2>
+                                    <a href="abityrient-ar/Stroky-pryiomu-zaiav-ta-dokumentiv-MS-2021.pdf" class="border hover:bg-yellow-600 hover:border-yellow-600 hover:text-white inline-flex items-center mt-2 px-3 py-1 rounded-lg text-gray-600 w-full" target="_blank">Строки прийому заяв та документів</a>
+                                    <a href="abityrient-ar/Perelik-neobkhidnykh-dokumentiv-MS.pdf" class="border hover:bg-yellow-600 hover:border-yellow-600 hover:text-white inline-flex items-center mt-2 px-3 py-1 rounded-lg text-gray-600 w-full" target="_blank">Перелік необхідних документів</a>
+                                    <a href="" class="border hover:bg-yellow-600 hover:border-yellow-600 hover:text-white inline-flex items-center mt-2 px-3 py-1 rounded-lg text-gray-600 w-full" target="_blank">Програма вступного випробування</a>
+                                    <a href="abityrient-ar/Dodatok_2_v4.pdf" class="border hover:bg-yellow-600 hover:border-yellow-600 hover:text-white inline-flex items-center mt-2 px-3 py-1 rounded-lg text-gray-600 w-full" target="_blank">Перелік спеціальностей та конкурсних предметів ЗНО у 2021 році</a>
+                                </div>
+                                <div class="bg-gray-200 group-hover:bg-gray-300 group-hover:text-gray-700 p-4 rounded-lg text-gray-600 flex items-center sm:w-auto justify-center w-full sm:h-full h-full" data-pg-class-style="pic_sm_card">
+                                    <i class="fa-3x fa-fw fa-exclamation-circle fas py-1.5"></i>
+                                </div>
+                            </div>                             
+                        </div>
+                        <div class="py-2 w-full sm:p-4 lg:w-6/12">
+                            <div class="border flex flex-col-reverse group h-full hover:border-gray-500 hover:shadow-2xl items-center lining-nums p-3 rounded-2xl w-full sm:flex-row">
+                                <div class="pt-3 w-full sm:pr-6 sm:pt-0">
+                                    <h2 data-pg-class-style="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl">Вступ на магістратуру</h2>
+                                    <a href="abityrient-ar/Stroky-pryiomu-zaiav-ta-dokumentiv-Mahistratura-2021.pdf" class="border hover:bg-yellow-600 hover:border-yellow-600 hover:text-white inline-flex items-center mt-2 px-3 py-1 rounded-lg text-gray-600 w-full" target="_blank">Строки прийому заяв та документів</a>
+                                    <a href="abityrient-ar/Perelik-dokumentiv-Mahistratura.pdf" class="border hover:bg-yellow-600 hover:border-yellow-600 hover:text-white inline-flex items-center mt-2 px-3 py-1 rounded-lg text-gray-600 w-full" target="_blank">Перелік необхідних документів</a>
+                                    <a href="" class="border hover:bg-yellow-600 hover:border-yellow-600 hover:text-white inline-flex items-center mt-2 px-3 py-1 rounded-lg text-gray-600 w-full" target="_blank">Програма вступного випробування з архітектури</a>
+                                    <a href="abityrient-ar/Prohrama-vstupnoho-ispytu-z-inozemnoi-movy_Mahistratura_2021.pdf" class="border hover:bg-yellow-600 hover:border-yellow-600 hover:text-white inline-flex items-center mt-2 px-3 py-1 rounded-lg text-gray-600 w-full" target="_blank">Програма вступного випробування з іноземної мови</a>
+                                </div>
+                                <div class="bg-gray-200 group-hover:bg-gray-300 group-hover:text-gray-700 p-4 rounded-lg text-gray-600 flex items-center sm:w-auto justify-center w-full sm:h-full h-full" data-pg-class-style="pic_sm_card">
+                                    <i class="fa-3x fa-fw fa-exclamation-circle fas py-1.5"></i>
+                                </div>
+                            </div>                             
+                        </div>                         
+                    </div>                     
                 </div>                 
             </div>             
         </section>
-        <img src="img/404.svg"/>
+        <section class="py-8"> 
+            <div class="max-w-screen-xl mx-auto px-4"> 
+                <div class="flex flex-no-wrap items-center py-4"> 
+                    <div class="pr-10 w-auto">
+                        <h2 class="text-gray-700 lg:text-3xl lg:font-light font-light text-2xl" data-pg-class-style="rozdelitel_text">// рівні підготовки, терміни навчання</h2>
+                    </div>                     
+                    <div class="bg-gray-700 flex-grow h-px max-w-full"></div>                     
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="py-2 w-full sm:p-4 sm:w-1/2 lg:w-1/4">
+                        <div class="border group h-full hover:border-gray-600 hover:shadow-xl lining-nums p-4 rounded-2xl">
+                            <p data-pg-class-style="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl">Бакалавр / денна</p>
+                            <p class="group-hover:text-gray-800 mt-2 text-gray-600">// 3 роки 10 місяців</p>
+                        </div>
+                    </div>
+                    <div class="py-2 w-full sm:p-4 sm:w-1/2 lg:w-1/4">
+                        <div class="border group h-full hover:border-gray-600 hover:shadow-xl lining-nums p-4 rounded-2xl">
+                            <h2 data-pg-class-style="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl">Бакалавр / заочна</h2>
+                            <p class="group-hover:text-gray-800 mt-2 text-gray-600">// 4 роки 6 місяців</p>
+                        </div>
+                    </div>
+                    <div class="py-2 w-full sm:p-4 sm:w-1/2 lg:w-1/4">
+                        <div class="border group h-full hover:border-gray-600 hover:shadow-xl lining-nums p-4 rounded-2xl">
+                            <h2 data-pg-class-style="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl">Магістр / денна</h2>
+                            <p class="group-hover:text-gray-800 mt-2 text-gray-600">// 1 рік 4 місяці</p>
+                        </div>
+                    </div>
+                    <div class="py-2 w-full sm:p-4 sm:w-1/2 lg:w-1/4">
+                        <div class="border group h-full hover:border-gray-600 hover:shadow-xl lining-nums p-4 rounded-2xl">
+                            <h2 data-pg-class-style="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl">Магістр / заочна</h2>
+                            <p class="group-hover:text-gray-800 mt-2 text-gray-600">// 1 рік 4 місяці</p>
+                        </div>
+                    </div>
+                </div>                 
+            </div>             
+        </section>
+        <section class="py-8"> 
+            <div class="max-w-screen-xl mx-auto px-4"> 
+                <div class="flex flex-no-wrap items-center py-4"> 
+                    <div class="pr-10 w-auto"> 
+                        <h2 class="text-gray-700 lg:text-3xl lg:font-light font-light text-2xl" data-pg-class-style="rozdelitel_text">// вартість навчання</h2> 
+                    </div>                     
+                    <div class="bg-gray-700 flex-grow h-px max-w-full"></div>                     
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="py-2 w-full sm:p-4 sm:w-1/2 lg:w-1/4">
+                        <div class="border group h-full hover:border-gray-600 hover:shadow-xl lining-nums p-4 rounded-2xl">
+                            <p data-pg-class-style="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl">Бакалавр / денна</p>
+                            <h2 data-pg-class-style="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl">24 000 грн./рік</h2>
+                            <p class="group-hover:text-gray-800 mt-2 text-gray-600">// на 2020 / 2021 н.р.</p>
+                        </div>
+                    </div>
+                    <div class="py-2 w-full sm:p-4 sm:w-1/2 lg:w-1/4">
+                        <div class="border group h-full hover:border-gray-600 hover:shadow-xl lining-nums p-4 rounded-2xl">
+                            <h2 data-pg-class-style="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl">Бакалавр / заочна</h2>
+                            <h2 data-pg-class-style="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl">20 400 грн./рік</h2>
+                            <p class="group-hover:text-gray-800 mt-2 text-gray-600">// на 2020 / 2021 н.р.</p>
+                        </div>
+                    </div>
+                    <div class="py-2 w-full sm:p-4 sm:w-1/2 lg:w-1/4">
+                        <div class="border group h-full hover:border-gray-600 hover:shadow-xl lining-nums p-4 rounded-2xl">
+                            <h2 data-pg-class-style="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl">Магістр / денна</h2>
+                            <h2 data-pg-class-style="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl">28 000 грн./рік</h2>
+                            <p class="group-hover:text-gray-800 mt-2 text-gray-600">// на 2020 / 2021 н.р.</p>
+                        </div>
+                    </div>
+                    <div class="py-2 w-full sm:p-4 sm:w-1/2 lg:w-1/4">
+                        <div class="border group h-full hover:border-gray-600 hover:shadow-xl lining-nums p-4 rounded-2xl">
+                            <h2 data-pg-class-style="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl">Магістр / заочна</h2>
+                            <h2 data-pg-class-style="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl">23 800 грн./рік</h2>
+                            <p class="group-hover:text-gray-800 mt-2 text-gray-600">// на 2020 / 2021 н.р.</p>
+                        </div>
+                    </div>
+                </div>                 
+            </div>             
+        </section>
         <footer class="bg-gray-700 pt-12 text-gray-400"> 
             <div class="max-w-screen-xl mx-auto px-4"> 
                 <div class="-mx-4 flex flex-col sm:justify-center md:flex-row"> 

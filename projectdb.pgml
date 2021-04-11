@@ -6,7 +6,7 @@
         <classstyle name="dropdown_btn" key="dropdown_btn" class="flex focus:outline-none font-bold hover:text-yellow-700 items-center outline-none px-4 py-2 sm:justify-center sm:w-full text-gray-700" count="0"></classstyle>
         <classstyle name="menu_btn" key="menu_btn" class="block font-bold hover:bg-yellow-600 hover:font-bold hover:text-white px-0 py-2 rounded-lg text-center lg:px-4 lg:py-2 text-gray-700" count="0"></classstyle>
         <classstyle name="menu_text" key="menu_text" class="px-4 py-2 uppercase sm:text-center lg:text-left" count="0"></classstyle>
-        <classstyle name="card" key="card" class="border flex group h-full hover:border items-center rounded-2xl hover:border-gray-500 hover:shadow-2xl p-3 flex-col-reverse sm:flex-row" count="0">
+        <classstyle name="card" key="card" class="border flex group h-full hover:border rounded-2xl hover:border-gray-500 hover:shadow-2xl p-3 flex-col-reverse sm:flex-row items-center" count="0">
             <classstyle name="sm_card" key="card.sm_card" class=" items-end" count="0"></classstyle>
         </classstyle>
         <classstyle name="text_kolektiv" key="text_kolektiv" class="flex p-6 flex-col w-full lining-nums" count="0"></classstyle>
@@ -38,5 +38,6 @@
         <classstyle name="team_name" key="team_name" class="group-hover:text-gray-800 text-gray-700 text-xl font-bold lg:text-2xl" count="0"></classstyle>
         <classstyle key="foto_kolectiv" name="foto_kolectiv" class="rounded-lg h-full w-full sm:h-auto sm:pt-72 sm:max-h-full sm:min-h-full pt-80 sm:w-8/12" count="0"></classstyle>
         <classstyle key="foto_biograf" name="foto_biograf" class="rounded-lg h-full sm:h-auto sm:pt-72 sm:max-h-full sm:min-h-full pt-80 w-full sm:w-6/12 lg:w-4/12" count="0"></classstyle>
+        <classstyle key="text_sm_card_2" name="text_sm_card_2" class="flex flex-col w-full pt-3 sm:pt-0 sm:pr-6 text-left" count="0"></classstyle>
     </classstyles>
 </project>
