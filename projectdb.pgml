@@ -39,5 +39,7 @@
         <classstyle key="foto_kolectiv" name="foto_kolectiv" class="rounded-lg h-full w-full sm:h-auto sm:pt-72 sm:max-h-full sm:min-h-full pt-80 sm:w-8/12" count="0"></classstyle>
         <classstyle key="foto_biograf" name="foto_biograf" class="rounded-lg h-full sm:h-auto sm:pt-72 sm:max-h-full sm:min-h-full pt-80 w-full sm:w-6/12 lg:w-4/12" count="0"></classstyle>
         <classstyle key="text_sm_card_2" name="text_sm_card_2" class="flex flex-col w-full pt-3 sm:pt-0 sm:pr-6 text-left" count="0"></classstyle>
+        <classstyle key="text_2xl_konf" name="text_2xl_konf" class="text-white text-right uppercase text-3xl lg:text-5xl font-bold mb-4" count="0"></classstyle>
+        <classstyle key="text_sm_konf" name="text_sm_konf" class="text-gray-400 text-right lg:text-lg" count="0"></classstyle>
     </classstyles>
 </project>
